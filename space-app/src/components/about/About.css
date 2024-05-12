@@ -1,0 +1,12 @@
+.card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: var(--negro);
+    height: 300px;
+    max-width: 400px;
+    border-radius: 45px;
+    margin: 20px auto;
+    gap: 20px auto;
+}

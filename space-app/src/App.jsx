@@ -6,7 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import Astros from './components/astros/Astros.jsx';
 import "./App.css";
-import tarjeta from './components/about/About.jsx'
+import Card from './components/about/About.jsx'
 
 
 import './App.css';
@@ -40,6 +40,7 @@ function App() {
      <Routes>
       <Route element={<Hero />} path="/" />
       <Route element={<Astros />} path="/astros"/>
+      <Route element={<Card />} path="/about"/>
      </Routes>
    
     </>

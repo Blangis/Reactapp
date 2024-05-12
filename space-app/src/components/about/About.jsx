@@ -1,55 +1,33 @@
+import Typography from '@mui/material/Typography';
+import "./About.css";
 
-
-
-
-const conoceme =[
-    {
-        name: "Giselle",
-        color_fav: "red",
-        interest: ["música"],
-
-    }
-];
-
-function createElements() {
-    const cardobj ={
-        card : document.createElement("div"),
-        name_section: document.createElement("h1"),
-        color_section: document.createElement("p"),
-        interest_section: document.createElement("p"),
-    }
-    return cardobj;
-    
+function Card() {
+    return <Info name="Giselle" apodo="Gis" formacion="Química de Alimentos" />  
 }
 
-
-
-function tarjeta (props) {
-    return(
-    name_section.textContent = conoceme.name,
-    color_section.textContent = conoceme.color_fav,
-    interest_section = conoceme.interest,
-    card.append(name_section, color_section, interest_section ))
-   
-     
-    }
-
-export default tarjeta;
-
-    
-/**
- * 
- * card_container.appendChild(card);
- * 
- * function Astro (props) {
-   
+function Info(props) {
     return (
-        <div className="card">
-            <h2>{props.astro.name}</h2>
-            <p>{props.astro.craft}</p>
+        <>
+        <div className="card-info">
+             <Typography variant="h2"> About me </Typography>
+            <p>Nombre: {props.name}</p>
+            <p>Apodo: {props.apodo}</p>
+            <p>Educación: {props.formacion}</p>
+
         </div>
-    );
-}
- */
+        </>
+       
+    )
+};
+
+
+export default Card;
+
+
+
+ 
+
+    
+
 
 
